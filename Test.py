@@ -6,5 +6,3 @@ s = ta.MA(p, 5)
 
 print(s)
 
-function = ta.get_functions();
-print(function)
