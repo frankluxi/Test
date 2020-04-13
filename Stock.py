@@ -21,7 +21,7 @@ class Stock:
             print("请先获取K线数据")
         close = self.__kLine.close.values
         self.__Macd = MACD(close)
-        self.__Macd.exec();
+        self.__Macd.calculate();
 
     def printDiff(self):
         if self.__Macd is None:
