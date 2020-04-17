@@ -1,7 +1,5 @@
-from index.MacdClass import MACD
+from analyzetools.MACD import MACD
 import tushare as tu
-
-
 class Stock:
     __stockID = ""
     __stockName = ""
@@ -19,6 +17,7 @@ class Stock:
     def calMacd(self):
         if self.__kLine is None:
             print("请先获取K线数据")
+            return
         close = self.__kLine.close.values
         self.__Macd = MACD(close)
         self.__Macd.calculate();
@@ -39,3 +38,6 @@ class Stock:
 stock = Stock("002142")
 stock.calMacd()
 stock.printDiff()
+
+
+

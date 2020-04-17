@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="修改基类，继承于Index">
-      <change afterPath="$PROJECT_DIR$/index/MA.py" afterDir="false" />
+    <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test/TestDic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/TestPandas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/TestTDX.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analyzetools/AnalyzeTools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analyzetools/MA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analyzetools/MAX.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock/Index.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stock/Stockbase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy/FirstStrategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strategy/Strategy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Macd.py" beforeDir="false" afterPath="$PROJECT_DIR$/Macd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/MA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/MacdClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzetools/MACD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index/index.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +50,31 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Study\python\stock\" />
       <recent name="E:\Study\python\stock\index" />
       <recent name="E:\Study\python\stock" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Macd">
+  <component name="RunManager" selected="Python.Index">
+    <configuration name="Index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stock" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stock/Index.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Macd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,6 +135,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="TestTDX" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/TestTDX.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,9 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Macd" />
-        <item itemvalue="Python.Stock" />
+        <item itemvalue="Python.Index" />
         <item itemvalue="Python.Test" />
+        <item itemvalue="Python.Stock" />
+        <item itemvalue="Python.Macd" />
+        <item itemvalue="Python.TestTDX" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +205,13 @@
       <workItem from="1586484185041" duration="933000" />
       <workItem from="1586593639418" duration="1025000" />
       <workItem from="1586594733945" duration="5528000" />
-      <workItem from="1586762721352" duration="5817000" />
+      <workItem from="1586762721352" duration="5966000" />
+      <workItem from="1586868426581" duration="1941000" />
+      <workItem from="1586938879173" duration="8860000" />
+      <workItem from="1587006692375" duration="10502000" />
+      <workItem from="1587042213670" duration="4759000" />
+      <workItem from="1587047012624" duration="1804000" />
+      <workItem from="1587089426173" duration="20333000" />
     </task>
     <task id="LOCAL-00001" summary="删除函数查看">
       <created>1586484261878</created>
@@ -164,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1586781553622</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加均线">
+      <created>1586784230863</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586784230863</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修改基类为Index">
+      <created>1586784307199</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586784307199</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,41 +250,67 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除函数查看" />
     <MESSAGE value="增加Index包，计算指标" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加Index包，计算指标" />
+    <MESSAGE value="增加均线" />
+    <MESSAGE value="修改基类为Index" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改基类为Index" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1586784057413">
+    <state x="395" y="96" key="#Inspections" timestamp="1587117956247">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586784057413" />
+    <state x="395" y="96" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1587117956247" />
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1587120543819">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1587120543819" />
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1586784306433">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586784306433" />
     <state x="543" y="158" key="FileChooserDialogImpl" timestamp="1586781483082">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="543" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1586781483082" />
-    <state width="1493" height="191" key="GridCell.Tab.0.bottom" timestamp="1586594664883">
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom" timestamp="1587118285638">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1586594664883" />
-    <state width="1493" height="191" key="GridCell.Tab.0.center" timestamp="1586594664883">
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587118285638" />
+    <state width="1493" height="191" key="GridCell.Tab.0.center" timestamp="1587118285638">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1586594664883" />
-    <state width="1493" height="191" key="GridCell.Tab.0.left" timestamp="1586594664883">
+    <state width="1493" height="191" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587118285638" />
+    <state width="1493" height="191" key="GridCell.Tab.0.left" timestamp="1587118285638">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1586594664883" />
-    <state width="1493" height="191" key="GridCell.Tab.0.right" timestamp="1586594664883">
+    <state width="1493" height="191" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587118285638" />
+    <state width="1493" height="191" key="GridCell.Tab.0.right" timestamp="1587118285638">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1586594664883" />
+    <state width="1493" height="191" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587118285638" />
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1587117181443">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587117181443" />
+    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1587117181443">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1587117181443" />
+    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1587117181443">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1587117181443" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1587117181443">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1587117181443" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1586484203167">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586484203167" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586781612682">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586784340792">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586781612682" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586784340792" />
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586593640634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -216,13 +319,25 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="492" y="208" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1586490020328" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1586784167315">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587114413816">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1586784167315" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1587114413816" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/test$Test.coverage" NAME="Test Coverage Results" MODIFIED="1586263276640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/stock$Test.coverage" NAME="Test Coverage Results" MODIFIED="1586593794423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stock$Index.coverage" NAME="Index Coverage Results" MODIFIED="1587117153925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/stock$Test.coverage" NAME="Test Coverage Results" MODIFIED="1587118272952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

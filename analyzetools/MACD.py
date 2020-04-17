@@ -1,6 +1,8 @@
 import talib as ta;
-import index.index as ind
-class MACD(ind.Index):
+import analyzetools.AnalyzeTools as ind
+
+
+class MACD(ind.AnalyzeTool):
     #__close = None
     __diff = None
     __dea = None
@@ -10,7 +12,8 @@ class MACD(ind.Index):
     __signalperiod = 9
 
     def __init__(self,sourceData):
-        ind.Index.__init__(sourceData)
+        #ind.AnalyzeTool.__init__(sourceData)
+        super(MACD, self).__init__(sourceData)
 
     def calculate(self):
         self.__diff,self.__dea,self.__up2u = ta.MACD(self._sourceData,
