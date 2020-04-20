@@ -1,4 +1,4 @@
-import analyzetools.AnalyzeTools as ind
+import AnalyzeTools.AnalyzeTools as ind
 
 import talib as ta
 

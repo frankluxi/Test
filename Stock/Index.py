@@ -1,9 +1,9 @@
 from pytdx.hq import TdxHq_API
 
 from Stock.Stockbase import StockBase
-from analyzetools.MA import MA
-from analyzetools.MACD import MACD
-from analyzetools.MAX import MAX
+from AnalyzeTools.MA import MA
+from AnalyzeTools.MACD import MACD
+from AnalyzeTools.MAX import MAX
 
 
 import numpy as np

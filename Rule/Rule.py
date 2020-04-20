@@ -2,19 +2,24 @@ from abc import abstractmethod
 
 
 class Rule:
-    _strategyCode = "0000"
-    _strategyName = ""
-    _sourceData = None
+    # 规则编码
+    _ruleCode = "0000"
+
+    # 规则名称
+    _ruleName = ""
+
+    # 基础数据
+    _data = None
 
     @abstractmethod
-    def test(self):
+    def runRule(self):
         pass
 
-    def setSourceData(self,sourceData):
-        self._sourceData = sourceData
+    def setSourceData(self,data):
+        self._data = data
 
     def getStrategyCode(self):
-        return  self._strategyCode
+        return  self._ruleCode
 
     def getStrategyName(self):
-        return self._strategyName
+        return self._ruleName

@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="" />
+    <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/Logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rule/FirstRule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rule/FirstRule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rule/Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rule/Rule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/Stockbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Stockbase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StockTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/StockTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestDic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestDic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/TestPandas.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestPandas.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzetools/AnalyzeTools.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzeTools/AnalyzeTools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzetools/MA.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzeTools/MA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzetools/MACD.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzeTools/MACD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyzetools/MAX.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnalyzeTools/MAX.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -210,7 +224,7 @@
       <workItem from="1587263761027" duration="1280000" />
       <workItem from="1587348762412" duration="611000" />
       <workItem from="1587381314184" duration="405000" />
-      <workItem from="1587381734176" duration="2743000" />
+      <workItem from="1587381734176" duration="5077000" />
     </task>
     <task id="LOCAL-00001" summary="删除函数查看">
       <created>1586484261878</created>
@@ -254,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587384452296</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="新增计算逻辑模块">
+      <created>1587384484410</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587384484410</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,10 +304,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1587381511560" />
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1587384451015">
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1587384483786">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587384451015" />
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587384483786" />
     <state x="543" y="158" key="FileChooserDialogImpl" timestamp="1586781483082">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -327,10 +348,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586484203167" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587128705253">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587384498370">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1587128705253" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1587384498370" />
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586593640634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

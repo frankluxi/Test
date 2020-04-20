@@ -1,4 +1,4 @@
-from analyzetools.AnalyzeTools import AnalyzeTool
+from AnalyzeTools.AnalyzeTools import AnalyzeTool
 import talib as ta
 
 

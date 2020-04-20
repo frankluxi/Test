@@ -1,4 +1,4 @@
-from analyzetools.MACD import MACD
+from AnalyzeTools.MACD import MACD
 import tushare as tu
 class Stock:
     __stockID = ""

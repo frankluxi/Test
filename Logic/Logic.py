@@ -23,40 +23,37 @@ class Logic:
         pass
 
     # 执行计算逻辑， logic = 0 为正向逻辑  否则为反向逻辑   默认为计算正向逻辑
-    def calLogic(self,data,logic=0):
+    def calLogic(self, data, logic=0):
+        if data is None:
+            print("invalid data")
+            return None
         self._data = data
-        if logic == 0 :
+        if logic == 0:
             return self._doLogic()
-        else :
+        else:
             return self._doReverseLogic()
 
     # 执行计算逻辑， logic = 0 为正向逻辑  否则为反向逻辑   默认为计算正向逻辑
-    def calLogic(self,logic=0):
+    def calLogic(self, logic=0):
         if self._data is None:
             print("invalid data")
             return None
-        return self.calLogic(self._data,logic)
+        return self.calLogic(self._data, logic)
 
-
-    def setLogicID(self,logicID):
+    def setLogicID(self, logicID):
         self._logicID = logicID
 
     def getLogicID(self):
         return self._logicID
 
-    def setLogicName(self,logicName):
+    def setLogicName(self, logicName):
         self._logicName = logicName
 
     def getLogicName(self):
         return self._logicName
 
-    def setLogicDesc(self,logicDesc):
+    def setLogicDesc(self, logicDesc):
         self._logicDesc = logicDesc
 
     def getLogicDesc(self):
         return self._logicDesc
-
-
-
-
-

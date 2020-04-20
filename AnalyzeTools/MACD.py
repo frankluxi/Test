@@ -1,5 +1,5 @@
 import talib as ta;
-import analyzetools.AnalyzeTools as ind
+import AnalyzeTools.AnalyzeTools as ind
 
 
 class MACD(ind.AnalyzeTool):

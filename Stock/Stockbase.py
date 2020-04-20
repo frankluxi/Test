@@ -134,7 +134,7 @@ class StockBase:
         for strategy in self._strategies:
             print("now is running Rule name = " + strategy.getStrategyName() + "......")
             strategy.setSourceData(self._KLineData)
-            ret = strategy.test()
+            ret = strategy.runRule()
             print("now Rule name = " + strategy.getStrategyName() + " run over the result = " + str(ret))
 
     def loadKLineData(self):
