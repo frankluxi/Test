@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Design/Quant.mdl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/Logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/StockTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/Stockbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Stockbase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategy/FirstStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rule/FirstRule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strategy/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rule/Rule.py" afterDir="false" />
-    </list>
+    <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +210,7 @@
       <workItem from="1587263761027" duration="1280000" />
       <workItem from="1587348762412" duration="611000" />
       <workItem from="1587381314184" duration="405000" />
-      <workItem from="1587381734176" duration="2405000" />
+      <workItem from="1587381734176" duration="2743000" />
     </task>
     <task id="LOCAL-00001" summary="删除函数查看">
       <created>1586484261878</created>
@@ -256,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587128676006</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增计算逻辑模块">
+      <created>1587384452296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587384452296</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +267,8 @@
     <MESSAGE value="增加均线" />
     <MESSAGE value="修改基类为Index" />
     <MESSAGE value="demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo" />
+    <MESSAGE value="新增计算逻辑模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增计算逻辑模块" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="96" key="#Inspections" timestamp="1587117956247">
@@ -284,10 +283,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1587381511560" />
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1587128674752">
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1587384451015">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587128674752" />
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587384451015" />
     <state x="543" y="158" key="FileChooserDialogImpl" timestamp="1586781483082">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
