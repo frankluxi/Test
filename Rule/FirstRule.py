@@ -1,7 +1,7 @@
-from strategy.Strategy import Strategy
+from Rule.Rule import Rule
 
 
-class FirstStrategy(Strategy):
+class FirstRule(Rule):
 
     def __init__(self):
         self._strategyCode = "0001"

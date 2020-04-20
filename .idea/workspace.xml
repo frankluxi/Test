@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/TestDic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/TestPandas.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/TestTDX.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyzetools/AnalyzeTools.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyzetools/MA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyzetools/MAX.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/Index.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/Stockbase.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy/FirstStrategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/strategy/Strategy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Design/Quant.mdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/Logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Macd.py" beforeDir="false" afterPath="$PROJECT_DIR$/Macd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/MA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/MacdClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyzetools/MACD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/StockTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock/Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Index.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock/Stockbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Stockbase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategy/FirstStrategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rule/FirstRule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategy/Strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rule/Rule.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +27,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aAb0tQw3OPRI5eZSu6pIdasfKv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -50,9 +45,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Study\python\stock\" />
-      <recent name="E:\Study\python\stock\index" />
+      <recent name="E:\Study\python\stock\Stock" />
+      <recent name="E:\Study\python\stock\Test" />
+      <recent name="E:\Study\python\stock\info" />
       <recent name="E:\Study\python\stock" />
+      <recent name="E:\Study\python\stock\" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Index">
@@ -79,6 +76,9 @@
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -94,17 +94,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Stock" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="StockTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Stock.py" />
+      <option name="SCRIPT_NAME" value="E:\Study\python\stock\StockTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,7 +186,7 @@
       <list>
         <item itemvalue="Python.Index" />
         <item itemvalue="Python.Test" />
-        <item itemvalue="Python.Stock" />
+        <item itemvalue="Python.StockTest" />
         <item itemvalue="Python.Macd" />
         <item itemvalue="Python.TestTDX" />
       </list>
@@ -211,7 +214,12 @@
       <workItem from="1587006692375" duration="10502000" />
       <workItem from="1587042213670" duration="4759000" />
       <workItem from="1587047012624" duration="1804000" />
-      <workItem from="1587089426173" duration="20333000" />
+      <workItem from="1587089426173" duration="21175000" />
+      <workItem from="1587208267263" duration="5463000" />
+      <workItem from="1587263761027" duration="1280000" />
+      <workItem from="1587348762412" duration="611000" />
+      <workItem from="1587381314184" duration="405000" />
+      <workItem from="1587381734176" duration="2405000" />
     </task>
     <task id="LOCAL-00001" summary="删除函数查看">
       <created>1586484261878</created>
@@ -241,76 +249,89 @@
       <option name="project" value="LOCAL" />
       <updated>1586784307199</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="demo">
+      <created>1587128676006</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587128676006</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="删除函数查看" />
     <MESSAGE value="增加Index包，计算指标" />
     <MESSAGE value="增加均线" />
     <MESSAGE value="修改基类为Index" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改基类为Index" />
+    <MESSAGE value="demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="demo" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="96" key="#Inspections" timestamp="1587117956247">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="395" y="96" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1587117956247" />
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1587120543819">
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1587383310123">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1587120543819" />
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1586784306433">
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1587383310123" />
+    <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587381511560">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1586784306433" />
+    <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1587381511560" />
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1587128674752">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587128674752" />
     <state x="543" y="158" key="FileChooserDialogImpl" timestamp="1586781483082">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="543" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1586781483082" />
-    <state width="1493" height="191" key="GridCell.Tab.0.bottom" timestamp="1587118285638">
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom" timestamp="1587131136775">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587118285638" />
-    <state width="1493" height="191" key="GridCell.Tab.0.center" timestamp="1587118285638">
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587131136775" />
+    <state width="1493" height="191" key="GridCell.Tab.0.center" timestamp="1587131136775">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587118285638" />
-    <state width="1493" height="191" key="GridCell.Tab.0.left" timestamp="1587118285638">
+    <state width="1493" height="191" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587131136775" />
+    <state width="1493" height="191" key="GridCell.Tab.0.left" timestamp="1587131136775">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587118285638" />
-    <state width="1493" height="191" key="GridCell.Tab.0.right" timestamp="1587118285638">
+    <state width="1493" height="191" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587131136775" />
+    <state width="1493" height="191" key="GridCell.Tab.0.right" timestamp="1587131136775">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="191" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587118285638" />
-    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1587117181443">
+    <state width="1493" height="191" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587131136775" />
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1587131136768">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587117181443" />
-    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1587117181443">
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587131136768" />
+    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1587131136768">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1587117181443" />
-    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1587117181443">
+    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1587131136768" />
+    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1587131136768">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1587117181443" />
-    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1587117181443">
+    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1587131136768" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1587131136768">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1587117181443" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1587131136768" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1586484203167">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586484203167" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1586784340792">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1587128705253">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1586784340792" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1587128705253" />
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586593640634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -319,10 +340,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="492" y="208" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1586490020328" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587114413816">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1587383603165">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1587114413816" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1587383603165" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

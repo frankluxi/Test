@@ -132,14 +132,16 @@ class StockBase:
 
     def runStategies(self):
         for strategy in self._strategies:
-            print("now is running strategy name = " + strategy.getStrategyName() + "......")
+            print("now is running Rule name = " + strategy.getStrategyName() + "......")
             strategy.setSourceData(self._KLineData)
             ret = strategy.test()
-            print("now strategy name = " + strategy.getStrategyName() + " run over the result = " + str(ret))
+            print("now Rule name = " + strategy.getStrategyName() + " run over the result = " + str(ret))
 
     def loadKLineData(self):
         self._getKLineData()
+        print(self._KLineData)
         self._calculateMA5()
+        print(self._KLineData)
         self._calculateMA10()
         self._calculateMA20()
         self._calculateMA30()
@@ -148,6 +150,7 @@ class StockBase:
         self._calculateMA250()
         self._calculateMACD()
         self._calculateMAX20()
+
 
 
 

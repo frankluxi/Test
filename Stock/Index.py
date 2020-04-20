@@ -1,13 +1,14 @@
 from pytdx.hq import TdxHq_API
 
+from Stock.Stockbase import StockBase
 from analyzetools.MA import MA
 from analyzetools.MACD import MACD
 from analyzetools.MAX import MAX
-from stock.Stockbase import StockBase
+
 
 import numpy as np
 
-from strategy.FirstStrategy import FirstStrategy
+from Rule.FirstRule import FirstRule
 
 
 class Index(StockBase):
@@ -29,7 +30,7 @@ hs500.addMACDTool(MACD(None))
 hs500.addMAXTool(MAX(None))
 
 hs500.loadKLineData()
-hs500.addStrategy(FirstStrategy())
+hs500.addStrategy(FirstRule())
 hs500.runStategies()
 
 

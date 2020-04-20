@@ -1,7 +1,7 @@
 from abc import abstractmethod
 
 
-class Strategy:
+class Rule:
     _strategyCode = "0000"
     _strategyName = ""
     _sourceData = None
