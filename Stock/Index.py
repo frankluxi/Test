@@ -6,9 +6,8 @@ from AnalyzeTools.MACD import MACD
 from AnalyzeTools.MAX import MAX
 
 
-import numpy as np
 
-from Rule.FirstRule import FirstRule
+from Strategies.StrategyTest import TestStrategy
 
 
 class Index(StockBase):
@@ -30,7 +29,7 @@ hs500.addMACDTool(MACD(None))
 hs500.addMAXTool(MAX(None))
 
 hs500.loadKLineData()
-hs500.addStrategy(FirstRule())
+hs500.addStrategy(TestStrategy())
 hs500.runStategies()
 
 

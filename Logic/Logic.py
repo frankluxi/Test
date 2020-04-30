@@ -14,12 +14,29 @@ class Logic:
     # 基础数据dataframe
     _data = None
 
+    _currentIndex = -1
+
+
+
+    def __init__(self,index,data):
+        self._currentIndex = index
+        self._data = data
+
+
     @abstractmethod
     def _doLogic(self):
         pass
 
     @abstractmethod
     def _doReverseLogic(self):
+        pass
+
+    @abstractmethod
+    def _isBeginIndex(self,index):
+        pass
+
+    @abstractmethod
+    def _isEndIndex(self,index):
         pass
 
     # 执行计算逻辑， logic = 0 为正向逻辑  否则为反向逻辑   默认为计算正向逻辑
@@ -34,7 +51,7 @@ class Logic:
             return self._doReverseLogic()
 
     # 执行计算逻辑， logic = 0 为正向逻辑  否则为反向逻辑   默认为计算正向逻辑
-    def calLogic(self, logic=0):
+    def calLogic1(self, logic=0):
         if self._data is None:
             print("invalid data")
             return None
@@ -57,3 +74,11 @@ class Logic:
 
     def getLogicDesc(self):
         return self._logicDesc
+
+    def setCurrentIndex(self,index):
+        self._currentIndex = index
+
+    def getCurrentIndex(self):
+        return self._currentIndex
+
+

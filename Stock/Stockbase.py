@@ -24,8 +24,8 @@ class StockBase:
         maxTool.setSourceData(self._KLineData.close.values)
         maxTool.calculate()
         self._KLineData[col] = maxTool.getResult()
-        print(self._KLineData)
-        print(self._KLineData.loc[self._KLineData.shape[0] -1,'MA250'])
+        #print(self._KLineData)
+        #print(self._KLineData.loc[self._KLineData.shape[0] -1,'MA250'])
 
 
     def __calculateMA(self,period):
@@ -133,15 +133,15 @@ class StockBase:
     def runStategies(self):
         for strategy in self._strategies:
             print("now is running Rule name = " + strategy.getStrategyName() + "......")
-            strategy.setSourceData(self._KLineData)
-            ret = strategy.runRule()
+            strategy.setData(self._KLineData)
+            ret = strategy.runStrategy()
             print("now Rule name = " + strategy.getStrategyName() + " run over the result = " + str(ret))
 
     def loadKLineData(self):
         self._getKLineData()
-        print(self._KLineData)
+        #print(self._KLineData)
         self._calculateMA5()
-        print(self._KLineData)
+        #print(self._KLineData)
         self._calculateMA10()
         self._calculateMA20()
         self._calculateMA30()
