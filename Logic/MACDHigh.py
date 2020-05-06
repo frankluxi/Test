@@ -56,6 +56,8 @@ class MACDHigh(Logic):
         return ret;
 
     def __calMaxMin(self):
+        print(self._data.columns)
+
         start = self._data.shape[0] - 1
         stockPillar = StockPillar.UNKNOW
         fragment = None

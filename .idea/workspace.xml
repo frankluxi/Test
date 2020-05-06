@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Event/Event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/DifNewHigh.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/LogicTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/MACDHigh.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/MACDdbl.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/TestEvent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rule/RuleTest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/AnalyseKLine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Strategies/Strategy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Strategies/StrategyTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rule/Rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rule/Rule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/Index.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/Stockbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Stockbase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestDic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestDic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/DifNewHigh.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/DifNewHigh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/MACDHigh.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/MACDHigh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/TestEvent.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestEvent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/AnalyseKLine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/AnalyseKLine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestTDX.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestTDX.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,14 +43,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Study\python\stock\Stock" />
       <recent name="E:\Study\python\stock\Test" />
+      <recent name="E:\Study\python\stock\Stock" />
       <recent name="E:\Study\python\stock\info" />
       <recent name="E:\Study\python\stock" />
       <recent name="E:\Study\python\stock\" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.TestEvent">
+  <component name="RunManager" selected="Python.TestTDX">
     <configuration name="Index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,13 +121,16 @@
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Logic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Logic/TestEvent.py" />
+      <option name="SCRIPT_NAME" value="E:\Study\python\stock\Test\TestEvent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,9 +143,6 @@
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -193,10 +182,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.TestEvent" />
-        <item itemvalue="Python.Index" />
-        <item itemvalue="Python.TestDic" />
         <item itemvalue="Python.TestTDX" />
+        <item itemvalue="Python.Index" />
+        <item itemvalue="Python.TestEvent" />
+        <item itemvalue="Python.TestDic" />
         <item itemvalue="Python.Test" />
       </list>
     </recent_temporary>
@@ -238,7 +227,9 @@
       <workItem from="1587960427609" duration="9279000" />
       <workItem from="1588037358262" duration="11556000" />
       <workItem from="1588123955411" duration="23394000" />
-      <workItem from="1588210971128" duration="4921000" />
+      <workItem from="1588210971128" duration="23542000" />
+      <workItem from="1588386311804" duration="3835000" />
+      <workItem from="1588728642512" duration="8483000" />
     </task>
     <task id="LOCAL-00001" summary="删除函数查看">
       <created>1586484261878</created>
@@ -296,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587387296632</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改计算逻辑对象加入事件对象">
+      <created>1588218483798</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1588218483798</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +309,8 @@
     <MESSAGE value="demo" />
     <MESSAGE value="新增计算逻辑模块" />
     <MESSAGE value="修改模块名称" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改模块名称" />
+    <MESSAGE value="修改计算逻辑对象加入事件对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改计算逻辑对象加入事件对象" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="96" key="#Inspections" timestamp="1587117956247">
@@ -326,46 +325,46 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1587381511560" />
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1587387295682">
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1588218482799">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1587387295682" />
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588218482799" />
     <state x="543" y="158" key="FileChooserDialogImpl" timestamp="1586781483082">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="543" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1586781483082" />
-    <state width="1493" height="256" key="GridCell.Tab.0.bottom" timestamp="1587713628536">
+    <state width="1493" height="256" key="GridCell.Tab.0.bottom" timestamp="1588760289038">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587713628536" />
-    <state width="1493" height="256" key="GridCell.Tab.0.center" timestamp="1587713628536">
+    <state width="1493" height="256" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588760289038" />
+    <state width="1493" height="256" key="GridCell.Tab.0.center" timestamp="1588760289037">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587713628536" />
-    <state width="1493" height="256" key="GridCell.Tab.0.left" timestamp="1587713628536">
+    <state width="1493" height="256" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588760289037" />
+    <state width="1493" height="256" key="GridCell.Tab.0.left" timestamp="1588760289037">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587713628536" />
-    <state width="1493" height="256" key="GridCell.Tab.0.right" timestamp="1587713628536">
+    <state width="1493" height="256" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588760289037" />
+    <state width="1493" height="256" key="GridCell.Tab.0.right" timestamp="1588760289038">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587713628536" />
-    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1587713628537">
+    <state width="1493" height="256" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588760289038" />
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1588760289039">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587713628537" />
-    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1587713628537">
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588760289039" />
+    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1588760289038">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1587713628537" />
-    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1587713628536">
+    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1588760289038" />
+    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1588760289038">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1587713628536" />
-    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1587713628537">
+    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1588760289038" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1588760289039">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1587713628537" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1588760289039" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1586484203167">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -395,6 +394,11 @@
           <line>20</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Stock/AnalyseKLine.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -407,7 +411,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/test$Test.coverage" NAME="Test Coverage Results" MODIFIED="1586263276640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/stock$Index.coverage" NAME="Index Coverage Results" MODIFIED="1587713375173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
+    <SUITE FILE_PATH="coverage/stock$Index.coverage" NAME="Index Coverage Results" MODIFIED="1588236830146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
     <SUITE FILE_PATH="coverage/stock$Test.coverage" NAME="Test Coverage Results" MODIFIED="1587118272952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/stock$TestTDX.coverage" NAME="TestTDX Coverage Results" MODIFIED="1588760168323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
   </component>
 </project>
