@@ -1,12 +1,12 @@
 import sys
 
-from Logic.Logic import Logic
+from Logic.OldLogic import OldLogic
 
 from enum import Enum
 from enum import unique
 
 
-class MACDHigh(Logic):
+class MACDHigh(OldLogic):
     # 新高次数
     _achieveTimes = 3;
 

@@ -1,8 +1,8 @@
-from Logic.Logic import Logic
+from Logic.OldLogic import OldLogic
 from Logic.MACDHigh import MACDHigh
 
 
-class MACDdbl(Logic):
+class MACDdbl(OldLogic):
     _achieveTimes = 2
 
     def __init__(self):

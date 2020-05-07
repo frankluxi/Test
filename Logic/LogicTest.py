@@ -1,7 +1,7 @@
-from Logic.Logic import Logic
+from Logic.OldLogic import OldLogic
 
 
-class Logic1(Logic):
+class Logic1(OldLogic):
 
     def __init__(self):
         self._logicID = "0001"
@@ -13,7 +13,7 @@ class Logic1(Logic):
         return True
 
 
-class Logic2(Logic):
+class Logic2(OldLogic):
     
     def __init__(self):
         self._logicID = "0002"

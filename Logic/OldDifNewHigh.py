@@ -1,9 +1,9 @@
 
 from Event.Event import Event, EventType
-from Logic.Logic import Logic
+from Logic.OldLogic import OldLogic
 
 
-class DifNewHighLogic(Logic):
+class OldDifNewHighLogic(OldLogic):
     __dataFragments = []
 
 

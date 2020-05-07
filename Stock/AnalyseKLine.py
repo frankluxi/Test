@@ -5,6 +5,7 @@ import pandas as pd
 from AnalyzeTools.MA import MA
 from AnalyzeTools.MACD import MACD
 from AnalyzeTools.MAX import MAX
+from Logic.DIFNewHighLogic import DIFNewHighLogic
 
 
 class AnalyseKLine:
@@ -27,6 +28,8 @@ class AnalyseKLine:
     __fragments = []
 
     __analyzeTools = {}
+
+    __logics = ["DIFNewHighLogic"]
 
     def __init__(self):
         self.__analyzeTools.update({'MA': MA(None)})
@@ -80,7 +83,6 @@ class AnalyseKLine:
     def __calculateMA(self,period):
         col = 'MA' + str(period);
         maTool = self.__analyzeTools["MA"]
-        print(type(maTool))
         maTool.setTimeperiod(period)
         maTool.setSourceData(self.__KLineData.close.values)
         maTool.calculate()
@@ -97,12 +99,12 @@ class AnalyseKLine:
         maxTool.calculate()
         self.__KLineData[col] = maxTool.getResult()
 
-
     def concatKLine(self, KLineData):
         if isinstance(KLineData, pd.DataFrame):
+            # 合并两个dataframe
             self.__KLineData = pd.concat([self.__KLineData, KLineData], axis=0, ignore_index=True)
+            # 重新计算衍生指标
             self.__calculateMA5()
-            # print(self._KLineData)
             self.__calculateMA10()
             self.__calculateMA20()
             self.__calculateMA30()
@@ -118,6 +120,10 @@ class AnalyseKLine:
                 self.__updateIndex = self.__endIndex + 1
                 self.__endIndex = self.__KLineData.shape[0]
                 self.__updateFragments()
+                index = self.__updateIndex
+                while index < self.__endIndex:
+                    self.__calLogics(index)
+                    index += 1
             return True
         else:
             print("invalid param")
@@ -168,11 +174,12 @@ class AnalyseKLine:
             fragment.setEIndex(start - 1)
             self.__insertFragment(fragment)
 
-
-
     def getValueByIndex(self,index,kpiName):
-        #####需要容错处理
-        return self.__KLineData.loc[index, kpiName]
+        # 需要容错处理
+        if index >= self.__beginIndex and index <= self.__endIndex:
+            return self.__KLineData.loc[index, kpiName]
+        else:
+            return None
 
     def getDifByIndex(self,index):
         return self.getValueByIndex(index,'DIF')
@@ -211,8 +218,47 @@ class AnalyseKLine:
         if not fragment in self.__fragments:
             self.__fragments.append(fragment)
 
-    def getDataFragment(self):
+    def getDataFragments(self):
         return self.__fragments
+
+    def getDataFragmentByIndex(self,index):
+        ret = None
+        for datafragment in self.__fragments:
+            if datafragment.getBIndex() <= index and datafragment.getEIndex() >= index:
+                ret = datafragment
+                break
+        return ret
+    # 判断指定索引是否存在指定类型的事件，如果存在返回该事件实例否则返回空
+    def getEventByType(self,index,eventType):
+        ret = None
+        try:
+            events = self.__events[index]
+        except KeyError:
+            pass
+        else:
+            for event in events:
+                if event.getEventType() == eventType:
+                    ret = event
+                    break
+        return ret
+
+    # 根据逻辑名字进行逻辑计算，符合条件则产生事件否则返回None
+    def __calLogic(self,logicName,index):
+        package = __import__("Logic")
+        module = getattr(package, logicName)
+        logic_class = getattr(module, logicName)
+        logic = logic_class(index,self)
+        return logic.calculateLogic()
+
+    def __calLogics(self,index):
+        for logicName in self.__logics:
+            event = self.__calLogic(logicName,index)
+            # 如果逻辑计算产生了事件，则将此事件
+            if event is not None:
+                self.__events.setdefault(index,[]).append(event)
+
+
+
 
 
 
