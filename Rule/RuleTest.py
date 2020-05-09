@@ -1,5 +1,5 @@
-import Logic.LogicTest as logics
-from Logic.MACDHigh import MACDHigh
+import OldLogic.LogicTest as logics
+from OldLogic.MACDHigh import MACDHigh
 from Rule.Rule import Rule
 
 

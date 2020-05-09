@@ -1,4 +1,4 @@
-from Logic.OldLogic import OldLogic
+from OldLogic.OldLogic import OldLogic
 
 
 class Logic1(OldLogic):

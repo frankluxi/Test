@@ -1,6 +1,7 @@
 
 from Event.Event import Event, EventType
-from Logic.OldLogic import OldLogic
+from OldLogic.MACDHigh import StockPillar
+from OldLogic.OldLogic import OldLogic
 
 
 class OldDifNewHighLogic(OldLogic):

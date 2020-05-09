@@ -3,6 +3,7 @@ import pandas as pd
 
 from AnalyzeTools.MACD import MACD
 #from Logic.DIFNewHighLogic import DIFNewHighLogic
+from Event.Event import EventType
 from Stock.AnalyseKLine import AnalyseKLine
 #dd = DIFNewHighLogic()
 api = TdxHq_API(auto_retry=True)
@@ -19,13 +20,17 @@ if api.connect('119.147.212.81', 7709):
     # print(data.high.values)
     print("*" * 50)
 
-    data1 = api.to_df(api.get_index_bars(9, 1, '000905', 0, 1))# 返回DataFrame
+    # data1 = api.to_df(api.get_index_bars(9, 1, '000905', 0, 1))# 返回DataFrame
 
-    ak.concatKLine(data1)
+    # ak.concatKLine(data1)
+    print("TTTTTT:" + str(ak.getEventByType(498,EventType.NEW_HIGH_DIF).getEventType()))
     print("@@@@@@@@@@@@@@@@" + str(ak.getDataFragments()[len(ak.getDataFragments()) - 1].getEIndex()))
 
     # data.append(data1,ignore_index=True)
 
     print(ak.getKLine())
+    dataFragment = ak.getDataFragmentByIndex(202)
+    print(ak.getDataFragments().index(dataFragment))
+    print(ak.getDataFragments()[ak.getDataFragments().index(dataFragment) ].getBIndex())
     api.disconnect()
 quit()

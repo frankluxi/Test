@@ -4,13 +4,24 @@ from enum import Enum, unique
 @unique
 class EventType(Enum):
     UNKNOW = 0
+    # 0轴上DIF新高
     NEW_HIGH_DIF = 1
+    # 0轴下DIF新低
     NEW_LOW_DIF = 2
+    # ？？？
     NEW_HIGH_WL = 3
+    # ？？？
     NEW_LOW_WL = 4
+    # 金叉
     GOLDEN_FORK = 5
+    # 死叉
     DEAD_FORK = 6
+    # DIF大于0
     DIF_GT_0 = 7
+    # DIF小于0
+    DIF_LT_0 = 8
+    # 新高拉低
+    HIGH_TO_LOW = 9
 
 
 class Event:

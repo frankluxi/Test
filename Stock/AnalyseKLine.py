@@ -1,4 +1,5 @@
 from enum import Enum, unique
+import numpy as np
 
 import pandas as pd
 
@@ -6,10 +7,11 @@ from AnalyzeTools.MA import MA
 from AnalyzeTools.MACD import MACD
 from AnalyzeTools.MAX import MAX
 from Logic.DIFNewHighLogic import DIFNewHighLogic
+from Logic.DeadForkLogic import DeadForkLogic
+from Logic.High2LowLogic import High2LowLogic
 
 
 class AnalyseKLine:
-
     # 当前K线的起始索引
     __beginIndex = -1
     # 当前K线的截止索引
@@ -29,7 +31,7 @@ class AnalyseKLine:
 
     __analyzeTools = {}
 
-    __logics = ["DIFNewHighLogic"]
+    __logics = ["DIFNewHighLogic","DeadForkLogic","High2LowLogic"]
 
     def __init__(self):
         self.__analyzeTools.update({'MA': MA(None)})
@@ -39,38 +41,37 @@ class AnalyseKLine:
     def __calculateMA5(self):
         self.__calculateMA(5)
 
-    #10日均线
-    #@abstractmethod
+    # 10日均线
+    # @abstractmethod
     def __calculateMA10(self):
         self.__calculateMA(10)
 
-    #20日均线
-    #@abstractmethod
+    # 20日均线
+    # @abstractmethod
     def __calculateMA20(self):
         self.__calculateMA(20)
 
-    #30日均线
-    #@abstractmethod
+    # 30日均线
+    # @abstractmethod
     def __calculateMA30(self):
         self.__calculateMA(30)
 
-
-    #60日均线
-    #@abstractmethod
+    # 60日均线
+    # @abstractmethod
     def __calculateMA60(self):
         self.__calculateMA(60)
 
-    #120日均线
-    #@abstractmethod
+    # 120日均线
+    # @abstractmethod
     def __calculateMA120(self):
         self.__calculateMA(120)
 
-    #250日均线
-    #@abstractmethod
+    # 250日均线
+    # @abstractmethod
     def __calculateMA250(self):
         self.__calculateMA(250)
 
-    def __calculateMACD(self,fastperiod = 12,slowperiod = 26,signalperiod = 9):
+    def __calculateMACD(self, fastperiod=12, slowperiod=26, signalperiod=9):
         macdTool = self.__analyzeTools["MACD"]
         macdTool.setFastPeriod(fastperiod)
         macdTool.setSlowPeriod(slowperiod)
@@ -80,7 +81,7 @@ class AnalyseKLine:
         self.__KLineData['DIF'] = macdTool.getDiff()
         self.__KLineData['DEA'] = macdTool.getDea();
 
-    def __calculateMA(self,period):
+    def __calculateMA(self, period):
         col = 'MA' + str(period);
         maTool = self.__analyzeTools["MA"]
         maTool.setTimeperiod(period)
@@ -91,7 +92,7 @@ class AnalyseKLine:
     def __calculateMAX20(self):
         self.__calculateMAX(20)
 
-    def __calculateMAX(self,period):
+    def __calculateMAX(self, period):
         col = 'MAX' + str(period);
         maxTool = self.__analyzeTools["MAX"]
         maxTool.setTimeperiod(period)
@@ -118,12 +119,13 @@ class AnalyseKLine:
             if updateRows > 0:
                 self.__beginIndex = 0
                 self.__updateIndex = self.__endIndex + 1
-                self.__endIndex = self.__KLineData.shape[0]
+                self.__endIndex = self.__KLineData.shape[0] - 1
                 self.__updateFragments()
                 index = self.__updateIndex
-                while index < self.__endIndex:
+                while index <= self.__endIndex:
                     self.__calLogics(index)
                     index += 1
+                print(self.__events)
             return True
         else:
             print("invalid param")
@@ -137,6 +139,7 @@ class AnalyseKLine:
 
     def containsEvent(self, index, event):
         return event in self.__events[index]
+
     # 返回当前的K线
     def getKLine(self):
         return self.__KLineData
@@ -174,38 +177,43 @@ class AnalyseKLine:
             fragment.setEIndex(start - 1)
             self.__insertFragment(fragment)
 
-    def getValueByIndex(self,index,kpiName):
+    def getValueByIndex(self, index, kpiName):
         # 需要容错处理
-        if index >= self.__beginIndex and index <= self.__endIndex:
-            return self.__KLineData.loc[index, kpiName]
+        # return self.__KLineData.loc[index, kpiName]
+        if self.__beginIndex <= index <= self.__endIndex:
+            try:
+                return self.__KLineData.loc[index, kpiName]
+            except KeyError:
+                print("index is " + str(index) + " and endindex is " + str(self.__endIndex))
+
         else:
-            return None
+            return np.nan
 
-    def getDifByIndex(self,index):
-        return self.getValueByIndex(index,'DIF')
+    def getDifByIndex(self, index):
+        return self.getValueByIndex(index, 'DIF')
 
-    def getDeaByIndex(self,index):
-        return self.getValueByIndex(index,'DEA')
+    def getDeaByIndex(self, index):
+        return self.getValueByIndex(index, 'DEA')
 
-    def getCloseByIndex(self,index):
-        return self.getValueByIndex(index,'close')
+    def getCloseByIndex(self, index):
+        return self.getValueByIndex(index, 'close')
 
-    def getOpenByIndex(self,index):
-        return self.getValueByIndex(index,'open')
+    def getOpenByIndex(self, index):
+        return self.getValueByIndex(index, 'open')
 
-    def getHighByIndex(self,index):
-        return self.getValueByIndex(index,'high')
+    def getHighByIndex(self, index):
+        return self.getValueByIndex(index, 'high')
 
-    def getLowByIndex(self,index):
-        return self.getValueByIndex(index,'low')
+    def getLowByIndex(self, index):
+        return self.getValueByIndex(index, 'low')
 
-    def getVolByIndex(self,index):
-        return self.getValueByIndex(index,'vol')
+    def getVolByIndex(self, index):
+        return self.getValueByIndex(index, 'vol')
 
-    def getAmountByIndex(self,index):
-        return self.getValueByIndex(index,'amount')
+    def getAmountByIndex(self, index):
+        return self.getValueByIndex(index, 'amount')
 
-    def __newFragment(self,stockPillar,bIndex,eIndex,value):
+    def __newFragment(self, stockPillar, bIndex, eIndex, value):
         fragment = DataFragment()
         fragment.setBIndex(bIndex)
         fragment.setEIndex(eIndex)
@@ -214,22 +222,23 @@ class AnalyseKLine:
         fragment.setStockPillar(stockPillar)
         return fragment
 
-    def __insertFragment(self,fragment):
+    def __insertFragment(self, fragment):
         if not fragment in self.__fragments:
             self.__fragments.append(fragment)
 
     def getDataFragments(self):
         return self.__fragments
 
-    def getDataFragmentByIndex(self,index):
+    def getDataFragmentByIndex(self, index):
         ret = None
         for datafragment in self.__fragments:
-            if datafragment.getBIndex() <= index and datafragment.getEIndex() >= index:
+            if datafragment.getBIndex() <= index <= datafragment.getEIndex():
                 ret = datafragment
                 break
         return ret
+
     # 判断指定索引是否存在指定类型的事件，如果存在返回该事件实例否则返回空
-    def getEventByType(self,index,eventType):
+    def getEventByType(self, index, eventType):
         ret = None
         try:
             events = self.__events[index]
@@ -243,25 +252,19 @@ class AnalyseKLine:
         return ret
 
     # 根据逻辑名字进行逻辑计算，符合条件则产生事件否则返回None
-    def __calLogic(self,logicName,index):
+    def __calLogic(self, logicName, index):
         package = __import__("Logic")
         module = getattr(package, logicName)
         logic_class = getattr(module, logicName)
-        logic = logic_class(index,self)
+        logic = logic_class(index, self)
         return logic.calculateLogic()
 
-    def __calLogics(self,index):
+    def __calLogics(self, index):
         for logicName in self.__logics:
-            event = self.__calLogic(logicName,index)
+            event = self.__calLogic(logicName, index)
             # 如果逻辑计算产生了事件，则将此事件
             if event is not None:
-                self.__events.setdefault(index,[]).append(event)
-
-
-
-
-
-
+                self.__events.setdefault(index, []).append(event)
 
 
 @unique
@@ -271,10 +274,7 @@ class StockPillar(Enum):
     GREEN = 2
 
 
-
-
 class DataFragment:
-
     __bIndex = -1
 
     __eIndex = -1
@@ -285,35 +285,35 @@ class DataFragment:
 
     __stockPillar = StockPillar.UNKNOW
 
-    def setBIndex(self,bIndex):
+    def setBIndex(self, bIndex):
         self.__bIndex = bIndex
 
     def getBIndex(self):
         return self.__bIndex
 
-    def setEIndex(self,eIndex):
+    def setEIndex(self, eIndex):
         self.__eIndex = eIndex
 
     def getEIndex(self):
         return self.__eIndex
 
-    def setMax(self,max):
+    def setMax(self, max):
         self.__max = max
 
     def getMax(self):
         return self.__max
 
-    def setMin(self,min):
+    def setMin(self, min):
         self.__min = min
 
     def getMin(self):
         return self.__min
 
-    def setStockPillar(self,stockPillar):
+    def setStockPillar(self, stockPillar):
         self.__stockPillar = stockPillar
 
     def getStockPillar(self):
         return self.__stockPillar
 
     def __eq__(self, other):
-        return isinstance(other,DataFragment) and self.__bIndex == other.__bIndex and self.__eIndex == other.__eIndex
+        return isinstance(other, DataFragment) and self.__bIndex == other.__bIndex and self.__eIndex == other.__eIndex

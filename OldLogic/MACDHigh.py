@@ -1,6 +1,6 @@
 import sys
 
-from Logic.OldLogic import OldLogic
+from OldLogic.OldLogic import OldLogic
 
 from enum import Enum
 from enum import unique

@@ -61,7 +61,7 @@ class Logic:
         currIndex = self._getBeginIndex()
         end = self._getEndIndex()
         ret = None
-        while currIndex != -1 and end != -1 and currIndex <= end :
+        while currIndex != -1 and end != -1 and currIndex <= end:
             ret = self._doLogic(currIndex)
             if ret is not None:
                 break

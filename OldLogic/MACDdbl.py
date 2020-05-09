@@ -1,5 +1,5 @@
-from Logic.OldLogic import OldLogic
-from Logic.MACDHigh import MACDHigh
+from OldLogic.OldLogic import OldLogic
+from OldLogic.MACDHigh import MACDHigh
 
 
 class MACDdbl(OldLogic):
