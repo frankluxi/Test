@@ -22,6 +22,16 @@ class EventType(Enum):
     DIF_LT_0 = 8
     # 新高拉低
     HIGH_TO_LOW = 9
+    # 新低拉高
+    LOW_TO_HIGH = 10
+    # 20日最高
+    HIGHEST_20 = 11
+    # 20日最低
+    LOWEST_20 = 12
+    # 30日最高
+    HIGHEST_30 = 13
+    # 30日最低
+    LOWEST_30 = 14
 
 
 class Event:
@@ -34,6 +44,8 @@ class Event:
     _eventType = EventType.UNKNOW
 
     _eventValue = None
+
+    _eventTime = 1
 
     def setBIndex(self,bIndex):
         self._bIndex = bIndex

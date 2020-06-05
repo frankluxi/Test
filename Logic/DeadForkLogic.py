@@ -27,3 +27,8 @@ class DeadForkLogic(Logic):
             ret.setEventType(EventType.DEAD_FORK)
             ret.setEventValue(value)
         return ret
+
+    def _doReverseLogic(self):
+        pass
+
+

@@ -9,6 +9,7 @@ from AnalyzeTools.MAX import MAX
 from Logic.DIFNewHighLogic import DIFNewHighLogic
 from Logic.DeadForkLogic import DeadForkLogic
 from Logic.High2LowLogic import High2LowLogic
+from Logic.HighestLogic import HighestLogic
 
 
 class AnalyseKLine:
@@ -31,7 +32,7 @@ class AnalyseKLine:
 
     __analyzeTools = {}
 
-    __logics = ["DIFNewHighLogic","DeadForkLogic","High2LowLogic"]
+    __logics = ["DIFNewHighLogic","DeadForkLogic","High2LowLogic","HighestLogic"]
 
     def __init__(self):
         self.__analyzeTools.update({'MA': MA(None)})
@@ -262,9 +263,13 @@ class AnalyseKLine:
     def __calLogics(self, index):
         for logicName in self.__logics:
             event = self.__calLogic(logicName, index)
-            # 如果逻辑计算产生了事件，则将此事件
+            # 如果逻辑计算产生了事件，则将此事件添加到时间列表当中
             if event is not None:
                 self.__events.setdefault(index, []).append(event)
+
+    def getEvents(self):
+        return self.__events
+
 
 
 @unique

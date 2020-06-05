@@ -44,3 +44,7 @@ class DIFNewHighLogic(Logic):
                 ret.setEventValue(difIndex)
             self.__difNewHigh = difIndex
         return ret
+
+    def _doReverseLogic(self):
+        pass
+

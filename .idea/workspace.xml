@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AnalyzeTools/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Event/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/DeadForkLogic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/High2LowLogic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Logic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OldLogic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rule/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Strategies/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/info/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/HighestLogic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Event/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/Event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/DIFNewHighLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/DIFNewHighLogic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/DeadForkLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/DeadForkLogic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/High2LowLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/High2LowLogic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logic/Logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/LogicTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/OldLogic/LogicTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/MACDHigh.py" beforeDir="false" afterPath="$PROJECT_DIR$/OldLogic/MACDHigh.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/MACDdbl.py" beforeDir="false" afterPath="$PROJECT_DIR$/OldLogic/MACDdbl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/OldDifNewHigh.py" beforeDir="false" afterPath="$PROJECT_DIR$/OldLogic/OldDifNewHigh.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/OldLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/OldLogic/OldLogic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rule/RuleTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Rule/RuleTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stock/AnalyseKLine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/AnalyseKLine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/TestTDX.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestTDX.py" afterDir="false" />
     </list>
@@ -54,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -64,6 +52,13 @@
       <recent name="E:\Study\python\stock\" />
       <recent name="E:\Study\python\stock\Test" />
       <recent name="E:\Study\python\stock\Stock" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study\python\stock" />
+      <recent name="E:\Study\python\stock\Test" />
+      <recent name="E:\Study\python\stock\Strategies" />
+      <recent name="E:\Study\python\stock\Stock" />
+      <recent name="E:\Study\python\stock\Rule" />
     </key>
   </component>
   <component name="RunManager" selected="Python.TestTDX">
@@ -159,6 +154,9 @@
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -250,7 +248,21 @@
       <workItem from="1588900397851" duration="621000" />
       <workItem from="1588902273968" duration="5119000" />
       <workItem from="1588939043687" duration="3576000" />
-      <workItem from="1588987926334" duration="2066000" />
+      <workItem from="1588987926334" duration="4915000" />
+      <workItem from="1589076927472" duration="1351000" />
+      <workItem from="1589161146619" duration="19040000" />
+      <workItem from="1589199758464" duration="930000" />
+      <workItem from="1589251379698" duration="1408000" />
+      <workItem from="1589332887406" duration="3001000" />
+      <workItem from="1589341015649" duration="3983000" />
+      <workItem from="1589419170175" duration="1561000" />
+      <workItem from="1589765609481" duration="2013000" />
+      <workItem from="1590033051997" duration="3294000" />
+      <workItem from="1590456813799" duration="2509000" />
+      <workItem from="1590542838884" duration="808000" />
+      <workItem from="1590718088853" duration="2392000" />
+      <workItem from="1590996224010" duration="981000" />
+      <workItem from="1591153843611" duration="405000" />
     </task>
     <task id="LOCAL-00001" summary="删除函数查看">
       <created>1586484261878</created>
@@ -329,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588832929423</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="重建Package">
+      <created>1588993911719</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588993911719</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,61 +366,62 @@
     <MESSAGE value="修改计算逻辑对象加入事件对象" />
     <MESSAGE value="新增AnalyseKLine对象" />
     <MESSAGE value="重构逻辑对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构逻辑对象" />
+    <MESSAGE value="重建Package" />
+    <option name="LAST_COMMIT_MESSAGE" value="重建Package" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="96" key="#Inspections" timestamp="1587117956247">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="395" y="96" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1587117956247" />
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1588855185276">
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1589178192245">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1588855185276" />
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1589178192245" />
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588764009087">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1588764009087" />
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1588832928325">
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1588993910820">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588832928325" />
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588993910820" />
     <state x="543" y="158" key="FileChooserDialogImpl" timestamp="1588833033561">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="543" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588833033561" />
-    <state width="1493" height="256" key="GridCell.Tab.0.bottom" timestamp="1588839735257">
+    <state width="1493" height="256" key="GridCell.Tab.0.bottom" timestamp="1589199445041">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588839735257" />
-    <state width="1493" height="256" key="GridCell.Tab.0.center" timestamp="1588839735257">
+    <state width="1493" height="256" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
+    <state width="1493" height="256" key="GridCell.Tab.0.center" timestamp="1589199445040">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588839735257" />
-    <state width="1493" height="256" key="GridCell.Tab.0.left" timestamp="1588839735257">
+    <state width="1493" height="256" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1589199445040" />
+    <state width="1493" height="256" key="GridCell.Tab.0.left" timestamp="1589199445040">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588839735257" />
-    <state width="1493" height="256" key="GridCell.Tab.0.right" timestamp="1588839735257">
+    <state width="1493" height="256" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1589199445040" />
+    <state width="1493" height="256" key="GridCell.Tab.0.right" timestamp="1589199445040">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588839735257" />
-    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1588839735257">
+    <state width="1493" height="256" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1589199445040" />
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1589199445041">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588839735257" />
-    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1588839735257">
+    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
+    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1589199445041">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1588839735257" />
-    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1588839735257">
+    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
+    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1589199445041">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1588839735257" />
-    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1588839735257">
+    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1589199445041">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1588839735257" />
+    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1586484203167">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -418,10 +438,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="492" y="208" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1586490020328" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1588835512850">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1589187662380">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1588835512850" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1589187662380" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -445,6 +465,6 @@
     <SUITE FILE_PATH="coverage/test$Test.coverage" NAME="Test Coverage Results" MODIFIED="1586263276640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/stock$Index.coverage" NAME="Index Coverage Results" MODIFIED="1588236830146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
     <SUITE FILE_PATH="coverage/stock$Test.coverage" NAME="Test Coverage Results" MODIFIED="1587118272952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/stock$TestTDX.coverage" NAME="TestTDX Coverage Results" MODIFIED="1588839653857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/stock$TestTDX.coverage" NAME="TestTDX Coverage Results" MODIFIED="1589189953812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
   </component>
 </project>

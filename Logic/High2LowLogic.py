@@ -1,9 +1,10 @@
 from Event.Event import Event, EventType
 from Logic.Logic import Logic
-import Stock.AnalyseKLine as ak
+
 
 
 class High2LowLogic(Logic):
+
     def __init__(self, index, analyseKLine):
         super().__init__(index, analyseKLine)
         self._logicID = "00003"
@@ -28,14 +29,20 @@ class High2LowLogic(Logic):
             if fragmentIndex >= 3: # 至少要有两组红柱，计算逻辑才能产生事件
                 dataFragment1 = self._analyseKLine.getDataFragments()[fragmentIndex - 1]
                 dataFragment2 = self._analyseKLine.getDataFragments()[fragmentIndex - 3]  # 1和3 为相邻两组红柱
-                if dataFragment1.getStockPillar() != ak.StockPillar.RED or dataFragment2.getStockPillar() != ak.StockPillar.RED:
+                from Stock.AnalyseKLine import StockPillar
+                if dataFragment1.getStockPillar() == StockPillar.RED and dataFragment2.getStockPillar() == StockPillar.RED:
                     # 此两组fragment一定为红柱否则整个K线是错误的
-                    raise Exception("Stock Pillar Error!", index)
-                if dataFragment1.getMax() < dataFragment2.getMax():
-                    ret = Event()
-                    ret.setBIndex(index)
-                    ret.setEIndex(index)
-                    ret.setEventIndex(index)
-                    ret.setEventType(EventType.HIGH_TO_LOW)
-                    ret.setEventValue(value)
+                    # print("间隔2个的红柱")
+                    if dataFragment1.getMax() < dataFragment2.getMax():
+                        ret = Event()
+                        ret.setBIndex(index)
+                        ret.setEIndex(index)
+                        ret.setEventIndex(index)
+                        ret.setEventType(EventType.HIGH_TO_LOW)
+                        ret.setEventValue(value)
+        return ret
+
+    def _doReverseLogic(self):
+        pass
+
 

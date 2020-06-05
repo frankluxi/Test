@@ -57,6 +57,10 @@ class Logic:
     def _doLogic(self,index):
         pass
 
+    @abstractmethod
+    def _doReverseLogic(self):
+        pass
+
     def calculateLogic(self):
         currIndex = self._getBeginIndex()
         end = self._getEndIndex()
