@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Logic/HighestLogic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Logic/Logics.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/AbstractKLine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/KLine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/KLineInterface.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/Quant.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/TestKLine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Event/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Event/Event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/DIFNewHighLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/DIFNewHighLogic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/DeadForkLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/DeadForkLogic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/High2LowLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/High2LowLogic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logic/Logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/Logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stock/AnalyseKLine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/AnalyseKLine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/TestTDX.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test/TestTDX.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +58,7 @@
       <recent name="E:\Study\python\stock\Rule" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.TestTDX">
+  <component name="RunManager" selected="Python.TestKLine">
     <configuration name="Index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,20 +125,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TestEvent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TestKLine" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Logic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\Study\python\stock\Test\TestEvent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/TestKLine.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -196,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestKLine" />
         <item itemvalue="Python.TestTDX" />
         <item itemvalue="Python.Reflect (1)" />
         <item itemvalue="Python.Reflect" />
         <item itemvalue="Python.Index" />
-        <item itemvalue="Python.TestEvent" />
       </list>
     </recent_temporary>
   </component>
@@ -263,6 +257,23 @@
       <workItem from="1590718088853" duration="2392000" />
       <workItem from="1590996224010" duration="981000" />
       <workItem from="1591153843611" duration="405000" />
+      <workItem from="1591349459837" duration="1292000" />
+      <workItem from="1591350898305" duration="58000" />
+      <workItem from="1591666698401" duration="1546000" />
+      <workItem from="1591751846347" duration="11959000" />
+      <workItem from="1591841081056" duration="6856000" />
+      <workItem from="1592030225104" duration="1760000" />
+      <workItem from="1592184530569" duration="2206000" />
+      <workItem from="1592272679525" duration="7395000" />
+      <workItem from="1592362454870" duration="2397000" />
+      <workItem from="1592457523781" duration="1205000" />
+      <workItem from="1592482016139" duration="686000" />
+      <workItem from="1592484693405" duration="394000" />
+      <workItem from="1592529743855" duration="2483000" />
+      <workItem from="1592627325640" duration="5485000" />
+      <workItem from="1592790752488" duration="3240000" />
+      <workItem from="1592967354942" duration="1550000" />
+      <workItem from="1593138876617" duration="526000" />
     </task>
     <task id="LOCAL-00001" summary="删除函数查看">
       <created>1586484261878</created>
@@ -348,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588993911719</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="重建Package">
+      <created>1591349500928</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1591349500928</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,62 +392,62 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="395" y="96" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1587117956247" />
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1589178192245">
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1592308472191">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1589178192245" />
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1592308472191" />
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588764009087">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1588764009087" />
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1588993910820">
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1591349499913">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1588993910820" />
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1591349499913" />
     <state x="543" y="158" key="FileChooserDialogImpl" timestamp="1588833033561">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="543" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588833033561" />
-    <state width="1493" height="256" key="GridCell.Tab.0.bottom" timestamp="1589199445041">
+    <state width="1493" height="501" key="GridCell.Tab.0.bottom" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
-    <state width="1493" height="256" key="GridCell.Tab.0.center" timestamp="1589199445040">
+    <state width="1493" height="501" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
+    <state width="1493" height="501" key="GridCell.Tab.0.center" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1589199445040" />
-    <state width="1493" height="256" key="GridCell.Tab.0.left" timestamp="1589199445040">
+    <state width="1493" height="501" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
+    <state width="1493" height="501" key="GridCell.Tab.0.left" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1589199445040" />
-    <state width="1493" height="256" key="GridCell.Tab.0.right" timestamp="1589199445040">
+    <state width="1493" height="501" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
+    <state width="1493" height="501" key="GridCell.Tab.0.right" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1589199445040" />
-    <state width="1493" height="256" key="GridCell.Tab.1.bottom" timestamp="1589199445041">
+    <state width="1493" height="501" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
+    <state width="1493" height="501" key="GridCell.Tab.1.bottom" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
-    <state width="1493" height="256" key="GridCell.Tab.1.center" timestamp="1589199445041">
+    <state width="1493" height="501" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
+    <state width="1493" height="501" key="GridCell.Tab.1.center" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
-    <state width="1493" height="256" key="GridCell.Tab.1.left" timestamp="1589199445041">
+    <state width="1493" height="501" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
+    <state width="1493" height="501" key="GridCell.Tab.1.left" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
-    <state width="1493" height="256" key="GridCell.Tab.1.right" timestamp="1589199445041">
+    <state width="1493" height="501" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
+    <state width="1493" height="501" key="GridCell.Tab.1.right" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="256" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1589199445041" />
+    <state width="1493" height="501" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
     <state x="270" y="59" key="SettingsEditor" timestamp="1586484203167">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586484203167" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1588832952958">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1591349514895">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1588832952958" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1591349514895" />
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586593640634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -451,6 +469,11 @@
           <line>20</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Stock/AbstractKLine.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -466,5 +489,6 @@
     <SUITE FILE_PATH="coverage/stock$Index.coverage" NAME="Index Coverage Results" MODIFIED="1588236830146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/stock" />
     <SUITE FILE_PATH="coverage/stock$Test.coverage" NAME="Test Coverage Results" MODIFIED="1587118272952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/stock$TestTDX.coverage" NAME="TestTDX Coverage Results" MODIFIED="1589189953812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/stock$TestKLine.coverage" NAME="TestKLine Coverage Results" MODIFIED="1592637213561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
   </component>
 </project>
