@@ -60,3 +60,6 @@ class KLineInterface(object):
     @abstractmethod
     def getData(self):
         pass
+    @abstractmethod
+    def getRowCount(self):
+        pass

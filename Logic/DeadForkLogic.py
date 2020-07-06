@@ -19,7 +19,7 @@ class DeadForkLogic(Logic):
         lastValue = self._analyseKLine.getDifByIndex(index - 1) - self._analyseKLine.getDeaByIndex(index - 1)
         value = self._analyseKLine.getDifByIndex(index) - self._analyseKLine.getDeaByIndex(index)
         ret = None
-        if lastValue >0 and value < 0:
+        if lastValue > 0 and value < 0:
             ret = Event()
             ret.setBIndex(index)
             ret.setEIndex(index)

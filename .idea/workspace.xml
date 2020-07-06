@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8923baa-9519-4d07-af8f-20ee2a6f8d9b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Logic/Logics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/AbstractKLine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/KLine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/KLineInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Stock/Quant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/TestKLine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Stock/MACDFragment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/TestQuant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/DeadForkLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/DeadForkLogic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logic/High2LowLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Logic/High2LowLogic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/AbstractKLine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/AbstractKLine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/AnalyseKLine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/AnalyseKLine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/KLine.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/KLine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/KLineInterface.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/KLineInterface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stock/Quant.py" beforeDir="false" afterPath="$PROJECT_DIR$/Stock/Quant.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +45,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -58,29 +64,7 @@
       <recent name="E:\Study\python\stock\Rule" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.TestKLine">
-    <configuration name="Index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stock" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stock/Index.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.TestQuant">
     <configuration name="Reflect (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,7 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Reflect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TestEvent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +100,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\Study\python\stock\info\Reflect.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/TestEvent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,6 +113,9 @@
       <module name="test" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -136,6 +123,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/TestKLine.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestQuant" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test/TestQuant.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TestQuant" />
         <item itemvalue="Python.TestKLine" />
+        <item itemvalue="Python.TestEvent" />
         <item itemvalue="Python.TestTDX" />
         <item itemvalue="Python.Reflect (1)" />
-        <item itemvalue="Python.Reflect" />
-        <item itemvalue="Python.Index" />
       </list>
     </recent_temporary>
   </component>
@@ -273,7 +282,20 @@
       <workItem from="1592627325640" duration="5485000" />
       <workItem from="1592790752488" duration="3240000" />
       <workItem from="1592967354942" duration="1550000" />
-      <workItem from="1593138876617" duration="526000" />
+      <workItem from="1593138876617" duration="3213000" />
+      <workItem from="1593308594083" duration="7500000" />
+      <workItem from="1593394324324" duration="8065000" />
+      <workItem from="1593486208881" duration="1329000" />
+      <workItem from="1593569483089" duration="3294000" />
+      <workItem from="1593653650564" duration="1936000" />
+      <workItem from="1593743480473" duration="5111000" />
+      <workItem from="1593852027627" duration="3439000" />
+      <workItem from="1593864135380" duration="1474000" />
+      <workItem from="1593940314273" duration="1044000" />
+      <workItem from="1593941397358" duration="12000" />
+      <workItem from="1593944131179" duration="648000" />
+      <workItem from="1593961964272" duration="1133000" />
+      <workItem from="1594000548767" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="删除函数查看">
       <created>1586484261878</created>
@@ -366,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591349500928</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="重构KLine分析对象">
+      <created>1593139463369</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1593139463369</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,29 +414,42 @@
     <MESSAGE value="新增AnalyseKLine对象" />
     <MESSAGE value="重构逻辑对象" />
     <MESSAGE value="重建Package" />
-    <option name="LAST_COMMIT_MESSAGE" value="重建Package" />
+    <MESSAGE value="重构KLine分析对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构KLine分析对象" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="96" key="#Inspections" timestamp="1587117956247">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="395" y="96" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1587117956247" />
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1592308472191">
+    <state x="465" y="9" key="#TestQuant" timestamp="1593861325322">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1592308472191" />
+    <state x="465" y="9" key="#TestQuant/0.0.1536.834@0.0.1536.834" timestamp="1593861325322" />
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser" timestamp="1593422507156">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="574" y="133" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1593422507156" />
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588764009087">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="128" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1588764009087" />
-    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1591349499913">
+    <state x="511" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1593861197739">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1591349499913" />
-    <state x="543" y="158" key="FileChooserDialogImpl" timestamp="1588833033561">
+    <state x="511" y="270" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.834@0.0.1536.834" timestamp="1593861197739" />
+    <state x="372" y="0" key="CommitChangelistDialog2" timestamp="1593139462476">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="543" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588833033561" />
+    <state x="372" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1593139462476" />
+    <state x="626" y="163" key="EnvironmentVariablesDialog" timestamp="1593860962061">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="626" y="163" key="EnvironmentVariablesDialog/0.0.1536.834@0.0.1536.834" timestamp="1593860962061" />
+    <state x="783" y="120" key="FileChooserDialogImpl" timestamp="1593962038511">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="783" y="120" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1593962038511" />
     <state width="1493" height="501" key="GridCell.Tab.0.bottom" timestamp="1592637625194">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -440,14 +482,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1493" height="501" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1592637625194" />
-    <state x="270" y="59" key="SettingsEditor" timestamp="1586484203167">
+    <state x="270" y="59" key="SettingsEditor" timestamp="1593962410730">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586484203167" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1591349514895">
+    <state x="270" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1593962410730" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1593139478029">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1591349514895" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1593139478029" />
     <state x="449" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1586593640634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -456,10 +498,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="492" y="208" key="git4idea.merge.GitPullDialog/0.0.1536.834@0.0.1536.834" timestamp="1586490020328" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1589187662380">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1593348367070">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1589187662380" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1593348367070" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

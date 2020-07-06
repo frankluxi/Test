@@ -2,7 +2,6 @@ from Event.Event import Event, EventType
 from Logic.Logic import Logic
 
 
-
 class High2LowLogic(Logic):
 
     def __init__(self, index, analyseKLine):
@@ -26,7 +25,7 @@ class High2LowLogic(Logic):
             if dataFragment is None:
                 raise IndexError
             fragmentIndex = self._analyseKLine.getDataFragments().index(dataFragment)
-            if fragmentIndex >= 3: # 至少要有两组红柱，计算逻辑才能产生事件
+            if fragmentIndex >= 3:  # 至少要有两组红柱，计算逻辑才能产生事件
                 dataFragment1 = self._analyseKLine.getDataFragments()[fragmentIndex - 1]
                 dataFragment2 = self._analyseKLine.getDataFragments()[fragmentIndex - 3]  # 1和3 为相邻两组红柱
                 from Stock.AnalyseKLine import StockPillar
@@ -44,5 +43,3 @@ class High2LowLogic(Logic):
 
     def _doReverseLogic(self):
         pass
-
-

@@ -105,13 +105,16 @@ class AbstractKline(KLineInterface, ABC):
         pass
 
     def getValueByIndex(self, index, kpiName):
-        if self.__beginIndex <= index <= self.__endIndex:
+        if 0 <= index <= self.getRowCount():
             try:
                 return self._KLineData.loc[index, kpiName]
             except KeyError:
-                print("index is " + str(index) + " and endindex is " + str(self.__endIndex))
+                print("index is " + str(index) + " and endindex is " + str(self.getRowCount()))
         else:
             return pd.np.nan
+
+    def getRowCount(self):
+        return self._KLineData.shape[0]
 
 
 

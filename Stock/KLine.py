@@ -7,6 +7,7 @@ from Stock.AbstractKLine import AbstractKline
 
 @unique
 class KLineType(Enum):
+    LINE_UNKNOW = -1
     LINE_1_D = 0
     LINE_15_M = 1
     LINE_30_M = 2
@@ -63,3 +64,5 @@ class KLine(AbstractKline):
 
     def getAmountByIndex(self, index):
         return self.getValueByIndex(index, 'amount')
+
+
